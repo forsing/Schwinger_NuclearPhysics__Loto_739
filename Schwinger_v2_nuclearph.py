@@ -10,9 +10,9 @@ import numpy as np
 
 
 
-DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv"
+DEFAULT = "/data/loto7_4698_k80.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_2971.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_plus_1727.csv"
 
 
 
@@ -391,42 +391,42 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: redovi 4587..4634; rang=7; regularizacija=1; prosek=1.2708
 Test: redovi 4635..4698
 SCHWINGER V2 NUCLEAR PHYSICS: prosek=1.0938; pogodaka 0..7=[17, 29, 13, 5, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Pozadina bez operatora prelaza: prosek=1.3750; pogodaka 0..7=[11, 26, 20, 6, 1, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 5,11,15,19,23,29,33
+SLEDECI RED 4699: 5,x,15,y,23,z,33
 Trosak projekcije=4.6960137768; globalni minimum projekcije potvrden.
 Singularne vrednosti kanala: 1.620317,0.704787,0.528804,0.423055,0.325844,0.223794,0.171863
 Operator opisuje strukturne prelaze; trosak nije verovatnoca.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: redovi 2860..2907; rang=2; regularizacija=100; prosek=1.5417
 Test: redovi 2908..2971
 SCHWINGER V2 NUCLEAR PHYSICS: prosek=1.1875; pogodaka 0..7=[16, 26, 16, 6, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Pozadina bez operatora prelaza: prosek=1.2812; pogodaka 0..7=[12, 29, 17, 5, 1, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 5,10,15,19,24,29,35
+SLEDECI RED 2972: 5,x,15,y,24,z,35
 Trosak projekcije=5.0476844641; globalni minimum projekcije potvrden.
 Singularne vrednosti kanala: 1.265194,0.591525
 Operator opisuje strukturne prelaze; trosak nije verovatnoca.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: redovi 1616..1663; rang=7; regularizacija=100; prosek=1.3333
 Test: redovi 1664..1727
 SCHWINGER V2 NUCLEAR PHYSICS: prosek=1.2500; pogodaka 0..7=[14, 27, 16, 7, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Pozadina bez operatora prelaza: prosek=1.2500; pogodaka 0..7=[12, 28, 20, 4, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 5,10,15,20,25,30,35
+SLEDECI RED 1728: 5,x,15,y,25,z,35
 Trosak projekcije=3.2920931482; globalni minimum projekcije potvrden.
 Singularne vrednosti kanala: 0.806135,0.637505,0.330350,0.310946,0.268139,0.204395,0.199590
 Operator opisuje strukturne prelaze; trosak nije verovatnoca.
@@ -442,7 +442,7 @@ Varijacioni deo je prošao proveru stacionarnosti i ograničenja broja kanala. P
 Model koristi varijacioni operator prelaza između ulaznih i izlaznih struktura, inspirisan radom Lippmanna i Schwingera o rasipanju.
 
 Predlog za red 4699:
-5, 11, 15, 19, 23, 29, 33
+5, x, 15, y, 23, z, 33
 
 Na poslednja 64 kola:
 Metod	Prosečan broj pogodaka
