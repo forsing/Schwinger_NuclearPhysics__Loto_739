@@ -8,9 +8,9 @@ from pathlib import Path
 import numpy as np
 
 DEFAULTS = (
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv",
+    "/data/loto7_4698_k80.csv",
+    "/data/loto7_4698_k80_loto_2971.csv",
+    "/data/loto7_4698_k80_loto_plus_1727.csv",
 )
 
 N, K, WINDOW, STARTS = 39, 7, 96, 6
@@ -538,7 +538,7 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -551,7 +551,7 @@ Test: redovi 4635..4698
 SCHWINGER V2 NUCLEAR PHYSICS: prosek=1.2031; pogodaka 0..7=[11, 34, 14, 5, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 5,9,11,25,34,35,36
+SLEDECI RED 4699: 5,x,11,y,34,z,36
 Skor=0.8454760830; iteracija=14; vec postoji u istoriji=False
 Singularne vrednosti: 0.999923,0.999829
 Proveren lokalni maksimum svih 224 zamena; globalni maksimum nije potvrden.
@@ -559,7 +559,7 @@ Kanali su strukturna analogija; skor nije verovatnoca dobitka.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -572,7 +572,7 @@ Test: redovi 2908..2971
 SCHWINGER V2 NUCLEAR PHYSICS: prosek=1.2188; pogodaka 0..7=[16, 26, 14, 8, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 13,16,25,26,27,35,39
+SLEDECI RED 2972: 13,x,25,y,27,z,39
 Skor=0.7477856078; iteracija=10; vec postoji u istoriji=False
 Singularne vrednosti: 0.999924,0.999845
 Proveren lokalni maksimum svih 224 zamena; globalni maksimum nije potvrden.
@@ -580,7 +580,7 @@ Kanali su strukturna analogija; skor nije verovatnoca dobitka.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -593,7 +593,7 @@ Test: redovi 1664..1727
 SCHWINGER V2 NUCLEAR PHYSICS: prosek=1.3750; pogodaka 0..7=[7, 35, 13, 9, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 1,3,19,28,33,36,37
+SLEDECI RED 1728: 1,x,19,y,33,z,37
 Skor=0.8304850480; iteracija=7; vec postoji u istoriji=False
 Singularne vrednosti: 0.999921,0.999814
 Proveren lokalni maksimum svih 224 zamena; globalni maksimum nije potvrden.
@@ -607,9 +607,9 @@ Varijacioni operator sada uči kanale celih prelaza, umesto prosečnih položaja
 Završni predlozi su različiti i nijedan već ne postoji u svom CSV-u.
 
 Fajl	                Sledeća kombinacija	    Prosek pogodaka na 64 kola	Prethodna kombinacija
-Objedinjeni, red 4699	5,9,11,25,34,35,36	    1,2031	                    1,2188
-Loto, red 2972	        13,16,25,26,27,35,39	1,2188	                    1,2969
-Loto Plus, red 1728	    1,3,19,28,33,36,37	    1,3750	                    1,2969
+Objedinjeni, red 4699	5,x,11,y,34,z,36	    1,2031	                    1,2188
+Loto, red 2972	        13,x,25,y,27,z,39	    1,2188	                    1,2969
+Loto Plus, red 1728	    1,x,19,y,33,z,37	    1,3750	                    1,2969
 
 Prednost na ovom testu postoji samo za Loto Plus. Provereni su varijacioni minimum, rang operatora, hronologija, ponovljivost i svih 224 zamena završnih predloga. Globalni maksimum pretrage nije potvrđen.
 """
